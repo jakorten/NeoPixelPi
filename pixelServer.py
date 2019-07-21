@@ -3,7 +3,12 @@
 """
   Python 3 script to run a simple REST server for remotely controlling a LED (WS2812) strip.
   Johan Korten
+  V1.0
   July 2019
+  
+  Server inspired by: https://gist.github.com/bradmontgomery/2219997
+  Also inspired by: https://www.studiopieters.nl/homebridge-neopixel-light/ 
+  Works well with https://www.npmjs.com/package/homebridge-neopixel
 """
 import socket
 from http.server import BaseHTTPRequestHandler, HTTPServer
