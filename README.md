@@ -11,5 +11,5 @@ Note: I connected the LED strip to the power adapter (3A, enough for 30 LEDs plu
 See https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring.
 
 Others have used intermediate solutions including the ESP8266:
-https://www.studiopieters.nl/homebridge-neopixel-light/
+https://www.studiopieters.nl/homebridge-neopixel-light/ but a. I did not have a ESP8266 lying around and b. thought it was too much overhead for me (I have a secondary pi running homebridge so could have used that one and replaced this Pi Zero W with an ESP8266 or something but well this works and this is what I had 'lying around').
 
