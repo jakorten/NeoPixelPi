@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+  Python 3 script to run a simple REST server for remotely controlling a LED (WS2812) strip.
+  Johan Korten
+  July 2019
+"""
 import socket
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import time
@@ -18,7 +24,7 @@ b = 255
 
 state = 0
 
-brightness = 1.0 # V from example
+brightness = 1.0
 last_color = (r, g, b)
 
 ORDER = neopixel.GRB
