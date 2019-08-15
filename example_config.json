@@ -1,0 +1,28 @@
+{
+        "bridge": {
+                "name": "Homecontrol Workbench",
+                "username": "AC:21:3F:E4:DE:13",
+                "port": 51826,
+                "pin": "035-45-150"
+        },
+        "accessories": [{
+                "accessory": "HTTP-NEO",
+                "name": "LED Strip",
+
+                "switch": {
+                        "status": "http://workbench.local:80/status",
+                        "powerOn": "http://workbench.local:80/on",
+                        "powerOff": "http://workbench.local:80/off"
+                },
+
+                "color": {
+                        "status": "http://workbench.local:80/color",
+                        "url": "http://workbench.local:80/set/%s"
+                },
+
+                "brightness": {
+                        "status": "http://workbench.local:80/bright",
+                        "url": "http://workbench.local:80/set/%s"
+                }
+        }]
+}
